@@ -53,29 +53,7 @@ inline bool chmin(T &a, T b) {
 }
 
 
-void solve(long long N, long long X, std::vector<long long> A){
-
-
-
-
-for(int j =0; j<101;j++){;
-    long long count=0;
-    vl B;
-    copy(A.begin(),A.end(),back_inserter(B));
-    B.push_back(j);
-    sort(B.begin(),B.end());
-    for(int i=1 ; i<=N-2;i++){
-        count+=B[i];
-    }
-    if (count >=X){
-        cout<<j<<endl;
-    return ;
-    }
-
-}
-cout<<"-1"<<endl;
-
-
+void solve(long long N, long long M, std::vector<long long> A, std::vector<long long> B, std::vector<long long> X, std::vector<long long> Y){
 
 }
 
@@ -83,12 +61,18 @@ cout<<"-1"<<endl;
 int main(){
         long long N;
     std::scanf("%lld", &N);
-    long long X;
-    std::scanf("%lld", &X);
-    std::vector<long long> A(N-1);
-    for(int i = 0 ; i < N-1 ; i++){
+    long long M;
+    std::scanf("%lld", &M);
+    std::vector<long long> A(M);
+    std::vector<long long> B(M);
+    std::vector<long long> X(M);
+    std::vector<long long> Y(M);
+    for(int i = 0 ; i < M ; i++){
         std::scanf("%lld", &A[i]);
+        std::scanf("%lld", &B[i]);
+        std::scanf("%lld", &X[i]);
+        std::scanf("%lld", &Y[i]);
     }
-        solve(N, X, std::move(A));
+        solve(N, M, std::move(A), std::move(B), std::move(X), std::move(Y));
         return 0;
 }

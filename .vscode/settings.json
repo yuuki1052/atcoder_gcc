@@ -3,7 +3,16 @@
     "files.associations": {
         "xstring": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "algorithm": "cpp",
+        "list": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "iterator": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
